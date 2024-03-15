@@ -1,0 +1,12 @@
+@mixin button-styles($a, $b, $c, $d, $e, $f) {
+  border: $a solid $b;
+  padding: $c $d;
+  background-color: $e;
+  color: $f;
+}
+
+.primary-button {
+  @include button-styles(1px, #ccc, 10px, 20px, #f0f0f0, #333);
+  background-color: #007bff;
+  color: #bff;
+}
